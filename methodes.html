@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Méthodes — Philosophie</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    .methods-grid{
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:16px;
+      margin-top:16px;
+    }
+    @media (max-width:900px){ .methods-grid{ grid-template-columns:1fr; } }
+    .method-tile{
+      display:block;
+      text-decoration:none;
+      border-radius:18px;
+      padding:18px;
+      background:rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.14);
+      transition:transform .15s ease, background .15s ease, border-color .15s ease;
+    }
+    .method-tile:hover{
+      transform:translateY(-2px);
+      background:rgba(255,255,255,.09);
+      border-color:rgba(255,255,255,.22);
+    }
+    .method-tile h2{ margin:0 0 8px; font-size:1.15rem; }
+    .method-tile p{ margin:0; color:rgba(255,255,255,.82); }
+    .pill{
+      display:inline-block;
+      margin-top:12px;
+      font-size:.85rem;
+      padding:6px 10px;
+      border-radius:999px;
+      background:rgba(0,0,0,.25);
+      border:1px solid rgba(255,255,255,.14);
+      color:rgba(255,255,255,.88);
+    }
+  </style>
+</head>
+<body>
+
+<main class="page">
+
+  <header class="page-top">
+    <a class="btn btn-ghost" href="a.html">← Menu</a>
+    <span class="chip chip--glow">Terminale • Méthodes</span>
+  </header>
+
+  <section class="hero">
+    <div class="hero__content">
+      <h1>Méthodes</h1>
+      <p class="hero__subtitle">
+        Choisis la méthode que tu veux réviser. Chaque bouton mène à une page dédiée.
+      </p>
+      <div class="hero__stats">
+        <div class="stat"><div class="stat__label">Pages</div><div class="stat__value">3 méthodes</div></div>
+        <div class="stat"><div class="stat__label">Objectif</div><div class="stat__value">Clarté • Rigueur</div></div>
+        <div class="stat"><div class="stat__label">Format</div><div class="stat__value">Bac</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="grid">
+    <article class="card card--wide">
+      <h2>Choisir une méthode</h2>
+
+      <div class="methods-grid">
+        <a class="method-tile" href="methode_dissertation.html">
+          <h2>📝 Dissertation</h2>
+          <p>Analyser le sujet, problématiser, construire un plan et rédiger proprement.</p>
+          <span class="pill">Plan • Problématique • Transitions</span>
+        </a>
+
+        <a class="method-tile" href="methode_explication.html">
+          <h2>📖 Explication de texte</h2>
+          <p>Comprendre la thèse, découper, expliquer linéairement sans paraphraser.</p>
+          <span class="pill">Thèse • Mouvements • Notions</span>
+        </a>
+
+        <a class="method-tile" href="methode_reperes.html">
+          <h2>🧠 Repères philosophiques</h2>
+          <p>Utiliser les oppositions pour structurer une réflexion et éviter les confusions.</p>
+          <span class="pill">Oppositions • Distinctions • Outils</span>
+        </a>
+      </div>
+
+      <div style="margin-top:18px; display:flex; gap:10px; flex-wrap:wrap;">
+        <a class="btn" href="menu.html">Retour au menu</a>
+      </div>
+    </article>
+  </section>
+
+  <footer class="footer">
+    <a class="btn" href="a.html">Retour au menu</a>
+    <span class="muted">© Méthodes — Philosophie</span>
+  </footer>
+
+</main>
+</body>
+</html>
